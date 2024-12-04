@@ -1,0 +1,158 @@
+:root {
+  --bg: #e5e5fd;
+  --darkblue: #1d1e4c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.container {
+  min-height: 100vh;
+  border: 10px solid var(--darkblue);
+  padding: 0 16px;
+}
+
+.content {
+  max-width: 56.25rem;
+  margin: 0 auto;
+}
+
+.top_section {
+  margin-top: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.image_container {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image_container,
+img {
+  width: 18.75rem;
+  height: 20rem;
+}
+
+.text_container h1 {
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: var(--darkblue);
+  text-transform: capitalize;
+}
+
+.text_container h4 {
+  font-size: 1.875rem;
+  text-align: end;
+}
+
+.about_section {
+  margin-top: 3.125rem;
+}
+
+.about_section h2 {
+  font-size: 4.375rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  text-transform: capitalize;
+}
+
+.about_section p {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.075rem;
+  text-align: justify;
+}
+
+.bio_section {
+  margin: 3.125rem 0;
+}
+
+.bio_section h3 {
+  font-size: 1.5625rem;
+  margin-bottom: 1.25rem;
+}
+
+.bio_section ul {
+  margin-left: 2.8125rem;
+}
+
+.bio_section li {
+  margin-bottom: 0.9375rem;
+}
+
+footer {
+  margin: 3.125rem 0;
+}
+
+footer p {
+  text-align: end;
+}
+
+/* Medium Screen */
+@media screen and (max-width: 800px) {
+  /* .content {
+    margin: 0 16px;
+  } */
+  .top_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9375rem;
+  }
+
+  .image_container,
+  img {
+    width: 15.625rem;
+    height: 16.875rem;
+  }
+
+  .text_container h1 {
+    font-size: 2.5rem;
+  }
+
+  .text_container h4 {
+    font-size: 1.5625rem;
+  }
+
+  .about_section {
+    margin-top: 1.875rem;
+  }
+
+  .about_section h2 {
+    font-size: 2.8125rem;
+  }
+}
+
+/* Small Screen */
+@media screen and (max-width: 450px) {
+  .image_container,
+  img {
+    width: 12.5rem;
+    height: 13.75rem;
+  }
+
+  .text_container h1 {
+    font-size: 1.875
+  }
+
+  .text_container h4 {
+    font-size: 1.25rem;
+  }
+
+  .about_section {
+    margin-top: 1.25rem;
+  }
+
+  .about_section h2 {
+    font-size: 2.1875rem;
+  }
+}
